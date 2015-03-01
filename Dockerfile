@@ -8,7 +8,7 @@ MAINTAINER Richard Louapre <richard.louapre@marklogic.com>
 WORKDIR /tmp
 ADD bootstrap.sh /tmp/bootstrap.sh 
 # RUN /bin/bash -c '/tmp/bootstrap.sh'
-RUN ["/bin/bash", "-c", "echo hello"]
+RUN ["/bin/bash", "-c", "/tmp/bootstrap.sh"]
 
 WORKDIR /
 # Expose MarkLogic admin
