@@ -7,7 +7,8 @@ FROM rlouapre/centos6-ml:7.0-4.3
 MAINTAINER Richard Louapre <richard.louapre@marklogic.com>
 WORKDIR /tmp
 ADD bootstrap.sh /tmp/bootstrap.sh 
-RUN /bin/bash -c '/tmp/bootstrap.sh'
+# RUN /bin/bash -c '/tmp/bootstrap.sh'
+RUN ["/bin/bash", "-c", "echo hello"]
 
 WORKDIR /
 # Expose MarkLogic admin
