@@ -82,7 +82,7 @@ AUTH_CURL="${CURL} --${AUTH_MODE} --user ${USER}:${PASS}"
 # (1) Initialize the server
 echo "Initializing $BOOTSTRAP_HOST..."
 $CURL -X POST -d "" http://${BOOTSTRAP_HOST}:8001/admin/v1/init
-sleep 10
+sleep 30
 
 # (2) Initialize security and, optionally, licensing. Capture the last
 #     restart timestamp and use it to check for successful restart.
