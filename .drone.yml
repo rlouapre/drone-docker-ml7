@@ -3,4 +3,6 @@ script:
   - /etc/rc.d/init.d/MarkLogic start
   - sleep 10
   - curl localhost:8001 -v
-  - ./.drone/build.sh
+  - ./.drone/npm install -g gulp
+  - ./.drone/npm install
+  - ./.drone/gulp ml:init
