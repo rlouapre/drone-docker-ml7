@@ -1,0 +1,6 @@
+{
+  "protocol": "https",
+  "host": "192.168.56.101",
+  "port": 2376,
+  "certPath" : "D:/Users/Richard/.docker/machines/.client"
+}
