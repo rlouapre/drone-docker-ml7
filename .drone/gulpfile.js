@@ -14,8 +14,7 @@ JSONStream = require('JSONStream');
 var username = 'admin';
 var password = 'admin';
 var realm = 'public';
-var host = dockerOptions.host || 'localhost';
-var image = 'rlouapre/centos6-ml:7.0-4.3';
+var host = 'localhost';
 
 // var port = 
 var baseUri = 'http://'+host+':8001';
