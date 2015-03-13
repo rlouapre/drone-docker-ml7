@@ -3,6 +3,8 @@ script:
   - /etc/rc.d/init.d/MarkLogic start
   - sleep 10
   - curl localhost:8001 -v
+  - yum -y update
+  - yum -y install epel-release
   - yum -y install nodejs npm
   - ./.drone/npm install -g gulp
   - ./.drone/npm install
