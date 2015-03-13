@@ -1,3 +1,4 @@
 image:  rlouapre/centos6-ml
 script:
+  - /usr/bin/supervisord -c /etc/supervisord.conf
   - curl localhost:8001 -v
