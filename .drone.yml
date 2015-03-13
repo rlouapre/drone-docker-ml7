@@ -3,3 +3,4 @@ script:
   - /etc/rc.d/init.d/MarkLogic start
   - sleep 10
   - curl localhost:8001 -v
+  - /var/cache/drone/src/github.com/rlouapre/test-docker-ml7/bootstrap.sh
