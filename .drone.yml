@@ -1,12 +1,10 @@
-image:  rlouapre/centos6-ml
+image:  rlouapre/centos6-ml7
 script:
   - /etc/rc.d/init.d/MarkLogic start
   - sleep 10
   - curl localhost:8001 -v
-  - yum -y update
-  - yum -y install epel-release
-  - yum -y install nodejs npm
   - cd ./.drone/
   - npm install -g gulp
   - npm install
   - gulp ml:init
+  - curl localhost:8001 --anyauth --user admin:admin -v
