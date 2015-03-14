@@ -1,8 +1,6 @@
 image:  rlouapre/centos6-ml7
 script:
   - /etc/rc.d/init.d/MarkLogic start
-  - sleep 5
-  - curl localhost:8001 -v
   - cd ./.drone/
   - npm install -g -q gulp
   - npm install -q
