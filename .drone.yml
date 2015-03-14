@@ -4,7 +4,7 @@ script:
   - sleep 5
   - curl localhost:8001 -v
   - cd ./.drone/
-  - npm install -g gulp
-  - npm install
+  - npm install -g -q gulp
+  - npm install -q
   - gulp ml:init
   - curl localhost:8001 --anyauth --user admin:admin -v
